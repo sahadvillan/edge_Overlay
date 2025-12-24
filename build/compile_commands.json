@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/sahad/Desktop/cpp/edge_Overlay/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/app.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\app.dir\\src\\main.cpp.obj -c C:\\Users\\sahad\\Desktop\\cpp\\edge_Overlay\\src\\main.cpp",
+  "file": "C:/Users/sahad/Desktop/cpp/edge_Overlay/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/sahad/Desktop/cpp/edge_Overlay/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/app.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\app.dir\\src\\cpu_pipeline.cpp.obj -c C:\\Users\\sahad\\Desktop\\cpp\\edge_Overlay\\src\\cpu_pipeline.cpp",
+  "file": "C:/Users/sahad/Desktop/cpp/edge_Overlay/src/cpu_pipeline.cpp",
+  "output": "CMakeFiles/app.dir/src/cpu_pipeline.cpp.obj"
+}
+]
