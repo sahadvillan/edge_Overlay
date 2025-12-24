@@ -1,0 +1,26 @@
+#include <opencv2/opencv.hpp>
+#include <iostream>
+
+int main() {
+    cv::VideoCapture cap(0); // 0 = default camera
+
+    if (!cap.isOpened()) {
+        std::cerr << "Error: Cannot open camera" << std::endl;
+        return -1;
+    }
+
+    cv::Mat frame;
+    while (true) {
+        cap >> frame;              // capture frame
+        if (frame.empty()) break;
+
+        cv::imshow("Camera", frame);
+
+        if (cv::waitKey(1) == 27)  // ESC key to exit
+            break;
+    }
+
+    cap.release();
+    cv::destroyAllWindows();
+    return 0;
+}

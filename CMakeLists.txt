@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 project(realtime_edge_overlay LANGUAGES CXX)
 
-option(ENABLE_CUDA "Enable CUDA backend" ON)
+option(ENABLE_CUDA "Enable CUDA backend" OFF)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -28,7 +28,6 @@ if(ENABLE_CUDA)
     CUDA_STANDARD_REQUIRED ON
   )
 
-  # Reasonable defaults
   target_compile_options(app PRIVATE
     $<$<COMPILE_LANGUAGE:CUDA>:--use_fast_math>
   )
